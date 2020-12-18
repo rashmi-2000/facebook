@@ -13,7 +13,7 @@
   <meta name="google" content="notranslate" />
   <meta content="Mashup templates have been developped by Rashmi XD" name="author">
 
-  <!-- Disable tap highlight on IE -->
+  
   <meta name="msapplication-tap-highlight" content="no">
 
 
@@ -23,7 +23,7 @@
   <link href="" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
   <title>Facebook</title>
@@ -34,29 +34,27 @@
 </head>
 
 <body>
-  <!-- Add your content of header -->
+ 
   <header>
     <nav class="navbar-fixed-top">
     <div class="topnav ">
-      <!-- <a href="#home" class="active">Logo</a> -->
+     
       <a class=" active">
         <div>
         <img src="./assets/images/mashup-icon.svg" class="navbar-logo-img" alt="">
         Facebook Downloader
       </div>
       </a>
-      <!-- Navigation links (hidden by default) -->
+
       <div id="myLinks">
-        <!-- <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a> -->
+      
         <a href="#" onclick=" myFunction()">Home</a>
         <a href="#myBtn" onclick=" myFunction()">How to Download</a>
         <a href="#features" onclick="myFunction()">Features</a>
           
         <a href="#about" onclick="myFunction() " >About Us</a>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars fa-2x" style="color: white;"></i>
       </a>
@@ -65,7 +63,9 @@
 
   </header>
 
-  <!-- Add your site or app content here -->
+
+  
+ 
   <div class="hero-full-container background-image-container white-text-container">
     <div class="container">
       <div class="row">
@@ -91,14 +91,13 @@
 
                       <label class="text-weight" style="color: black;"><b>Paste Link Here:</b></label>
                       <br>
+                      <br>
                       <div class="input-group " style="text-align: center;">
-                        <input type="txt" name="link" id="youtube-id" placeholder="Enter Facebook video link"
+                        <input type="txt" name="link" id="youtube-id" placeholder="Enter Facebook video link" style="box-shadow: 0 0 20px rgb(37, 37, 37);"
                           class="form-control link" required>
                         <span class="input-group-btn" id="bthide">
-                          <button class="btn btn-danger btn-block click-btn-down" type="submit"><i
-                              class="fa fa-download" style="color: rgb(18, 17, 19);"></i> Click here
-                            to proceed</button>
-
+                          <button class="btn  btn-block click-btn-down btn-grad1" type="submit"> Proceed</button>
+                        
                         </span>
                       </div>
 
@@ -114,7 +113,7 @@
                       <div id='hide' style="display: none;" class="form-group">
                         <label class="text-weight" style="color: black;"><b>Select Format:</b></label>
                         <br>
-
+                        <br>
                         <select class="form-control formte" required>
                           <option selected disabled>Select Format</option>
                           <option value="mp3">Mp3 Audio</option>
@@ -134,7 +133,7 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group mt-4 download-video">
-                        <!-- <button class="btn btn-success btn-block click-btn-down" type="submit">Click here to proceed</button> -->
+                     
                       </div>
                     </div>
                   </div>
@@ -145,129 +144,66 @@
 
 
 
-              <button type="button" class="btn btn-info" id="myBtn">How to Download</button>
+              <button type="button" class="btn btn-grad" id="myBtn">How to Download</button>
               <br>
               <br>
               <p style="color: black;"><b>Confused? Click on the above button and follow the steps.</b></p>
-              <!-- The Modal -->
+             
               <div id="myModal" class="modal">
 
-                <!-- Modal content -->
+               
                 <div class="modal-content">
-                  <!-- <div class="modal-header">
-                   
-                    <span class="close">&times;</span>
-                    <h3 style="color: rgb(238, 215, 215); text-align: center;" >How to Download?</h2>
-                  </div> -->
-                  <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    
-                    <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                      <li data-target="#myCarousel" data-slide-to="3"></li>
-                    </ol> -->
+                 
                     <div class="modal-body">
-                      <!-- Wrapper for slides -->
-                      <!-- <div class="carousel-inner">
-                        <div class="item active">
-                          <div style="text-align: center;">
-                            <h3 style="color: floralwhite;">Step-1</h3>
-                            <p style="color: floralwhite;">Paste the link of your video in the given place</p>
-                          </div>
-                          <img src="./assets/images/pasteLink.png" class="centerimg">
-
-                        </div>
-
-                        <div class="item">
-                          <div style="text-align: center;">
-                            <h3 style="color: floralwhite;">Step-2</h3>
-                            <p style="color: floralwhite;">Select the format in which you want to download your video
-                            </p>
-                          </div>
-                          <img src="./assets/images/Format.png" class="centerimg">
-
-                        </div>
-
-                        <div class="item">
-                          <div style="text-align: center;">
-                            <h3 style="color: floralwhite;">Step-3</h3>
-                            <p style="color: floralwhite;"> Click on proceed to download and then confirm your video and
-                              format</p>
-                          </div>
-                          <img src="./assets/images/check.png" class="centerimg">
-                        </div>
-                        <div class="item">
-                          <div style="text-align: center;">
-                            <h3 style="color: floralwhite;">Step-4</h3>
-                            <p style="color: floralwhite;"> Click on Download Now once the video is ready and wait for a
-                              few
-                              seconds</p>
-                          </div>
-                          <img src="./assets/images/Download.png" class="centerimg">
-
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                      </div> -->
+                     
                       <span class="close">&times;</span>
-                      <div class="content-slider">
+                      <div class="content-slider" >
                         <div class="slider">
                           <div class="mask">
                             <ul>
                               <li class="anim1">
-                                <div ><h2 style="color: rgb(19, 0, 54); text-align: center;">Step-1</h2>
+                                <div ><h2 style="color: floralwhite; text-align: center;">Step-1</h2>
                                   <img
-                                src="./assets/images/pasteLink.png"
+                                src="./assets/images/s1.png"
                                  style="width:70%">
                                 </div>
                                 <br>
-                                <div class="source" style="color: rgb(0, 0, 0);"><b>Paste the link of your video in the given place</b</div>
+                                <div class="source" style="color: rgb(0, 0, 0);"><b>Paste the link of your video in the given place.</b</div>
                               </li>
                               <li class="anim2">
-                                <div ><h2 style="color: rgb(19, 0, 54); text-align: center;">Step-2</h2>
-                                  <img src="./assets/images/Format.png" alt="Mike" style="width:70%">
+                                <div ><h2 style="color: floralwhite ; text-align: center;">Step-2</h2>
+                                  <img src="./assets/images/s2.png" alt="Mike" style="width:70%">
                                 </div>
                                 <br>
-                                <div class="source" style="color: rgb(0, 0, 0);"><b>Select the format in which you want to download your video</b</div>
+                                <div class="source" style="color: rgb(0, 0, 0);"><b>Click on the PROCEED button.</b</div>
                               </li>
                               <li class="anim3">
-                                <div ><h2 style="color: rgb(19, 0, 54); text-align: center;">Step-3</h2>
-                                  <img src="./assets/images/check.png"
+                                <div ><h2 style="color: floralwhite; text-align: center;">Step-3</h2>
+                                  <img src="./assets/images/s3.png"
                                 alt="John" style="width:70%">
                                 </div>
                                 <br>
-                                <div class="source" style="color: rgb(0, 0, 0);"><b>Click on proceed to download and then confirm your video and
-                                  format</b</div>
+                                <div class="source" style="color: rgb(0, 0, 0);"><b>Click on the drop-down arrow & select the format in which you want to download from the drop-down list.</b</div>
                               </li>
                                <li class="anim4">
-                                <div ><h2 style="color: rgb(19, 0, 54); text-align: center;">Step-4</h2>
+                                <div ><h2 style="color: floralwhite; text-align: center;">Step-4</h2>
                                   <img
-                                src="./assets/images/Download.png"
+                                src="./assets/images/s4.png"
                                 alt="Jane" style="width:70%"><br>
                                 </div>
                                 <br>
-                                <div class="source" style="color: rgb(0, 0, 0);"><b>Click on Download Now once the video is ready and wait for a
-                                  few
-                                  seconds</b</div>
+                                <div class="source" style="color: rgb(0, 0, 0);"><b>Click on Download button.</b></div>
                                   </li>
-                                <!-- 
+                                 
                              
                               <li class="anim5">
-                                <div ><h2 style="color: rgb(19, 0, 54); text-align: center;">Full file format supported</h2>
-                                  <img src="https://www.freeaudiovideosoft.com/file/convert-audio-50.png" alt="Mike" style="width:100%">
+                                <div ><h2 style="color: floralwhite; text-align: center;">Step-5</h2>
+                                  <img src="./assets/images/s5.PNG" alt="Mike" style="width:70%">
                                 </div>
-                                <div class="source" style="color: rgb(0, 0, 0);"><b>We support all video and audio formats conversion. You can easily convert YouTube videos to MP3, 3GP,
-                                  MP4, WMA, M4A, FLV, WEBM and MO formats, etc.</b</div>
+                                <br>
+                                <div class="source" style="color: rgb(0, 0, 0);"><b>Wait for the download bar to load to 100% and then click on Download Now!</b</div>
                               </li>
-                              <li class="anim6">
-                                <div ><h2 style="color: rgb(19, 0, 54); text-align: center;">Easily Downloadable</h2>
-                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUEp51DMreNUyTtgqvy7cQXTsSuYl4Fy7lg&usqp=CAU"
-                                alt="John" style="width:100%">
-                                </div>
-                                <div class="source" style="color: rgb(0, 0, 0);"><b>No register accounts needed. All you need to do is to enter the video's url that you wish to convert &
-                                  download. Select the format then click "download" to start the converting process.</b</div> -->
+                            
                               </li>
                             </ul>
                           </div>
@@ -276,21 +212,10 @@
                     </div>
 
                     
-                    <!-- <a class="left carousel-control leftcontrol" href="#myCarousel" data-slide="prev">
-                      
-                      <i class="fa fa-caret-left" aria-hidden="true"></i>
-
-                      
-                    </a>
-                    <a class="right carousel-control rightcontrol" href="#myCarousel" data-slide="next">
-                      <i class="fa fa-caret-right" aria-hidden="true"></i>
-                      
-                    </a> -->
+                  
                   </div>
                 </div>
-                <!-- <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div> -->
+             
               </div>
 
 
@@ -309,26 +234,12 @@
   </div>
 
 
-  <!-- <form action="download.php" method="post" onsubmit="progressShow()">
-    <div class="input-group col-lg-8">
-    <input name="URLz" class="form-control input-lg" placeholder="Enter Facebook Video Link ..." type="text">
-    <span class="input-group-btn"><button class="btn btn-primary input-lg" type="submit"><strong><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> Download</strong></button></span>
-    </div>
-    </form> -->
-
-
-  <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fbdown_howto">
-    <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
-     <strong>How to Use FBDOWN.net</strong>
-    </button> -->
-
   </div>
   </div>
 
 
 
 
-  <!-- <img src="https://graph.facebook.com/180059477108554/picture" /> -->
   <br>
   <br>
   <br>
@@ -344,14 +255,12 @@
 
   <div class="about-section">
     <h1 style="color:white;" id=features>Features</h1>
-    <p>Our Facebook Downloader allows you to convert Facebook videos with just a few clicks. You can download
+    <p  style="color: floralwhite;"><em>Our Facebook Downloader allows you to convert Facebook videos with just a few clicks. You can download
       videos in different quality such as: 360p,720p, 1080p and 4K. Now you can easily convert thousands of videos
       from Facebook and save them to your collection of favorites. It has never been easier to download videos
-      from Facebook.</p>
-    <!-- <p>Some text about who we are and what we do.</p>
-    <p>Resize the browser window to see that this page is responsive by the way.</p> -->
+   
   </div>
-  <!-- <h1>Pure CSS3 Text Carousel</h1> -->
+ 
   <div class="section-container">
     <div class="container">
       <div class="row">
@@ -418,61 +327,7 @@
       </div>
     </div>
   </div>
-  <!-- <h2 style="text-align:center; color: rgb(255, 255, 255);">Our Team</h2> -->
-  <!-- <div class="row">
-    <div class="column">
-      <div class="card h-100">
-        <img
-          src="https://thumbs.dreamstime.com/b/cross-platform-concept-banner-building-mobile-interface-screen-laptop-smartphone-tablet-developers-use-software-multiple-140348743.jpg"
-          alt="Jane" style="width:100%">
-        <div class="container">
-          <div class="col col-sm-3">
-            <h2 style="color: #0e0042;">Full platforms supported</h2>
-            
 
-            <p>We support all device platforms. Easy to convert YouTube videos to MP3 files regardless of whether you
-              are using Windows, Mac or Linux, Android, iPhone.</p>
-
-            
-            <p><button class="button"></button></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card h-100">
-        <img src="https://www.freeaudiovideosoft.com/file/convert-audio-50.png" alt="Mike" style="width:100%">
-        <div class="container">
-          <div class="col col-sm-3">
-            <h2 style="color: #0e0042;">Full file format supported</h2>
-            
-            <p>We support all video and audio formats conversion. You can easily convert YouTube videos to MP3, 3GP,
-              MP4, WMA, M4A, FLV, WEBM and MO formats, etc.</p>
-           
-            <p><button class="button"></button></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="card h-100">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUEp51DMreNUyTtgqvy7cQXTsSuYl4Fy7lg&usqp=CAU"
-          alt="John" style="width:100%">
-        <div class="container">
-          <div class="col col-sm-3">
-            <h2 style="color: #0e0042;">Easily Downloadable</h2>
-            
-            <p>No register accounts needed. All you need to do is to enter the video's url that you wish to convert &
-              download. Select the format then click "download" to start the converting process.</p>
-           
-            <p><button class="button"></button></p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
 
   <div class="section-container">
     <div class="container">
@@ -492,47 +347,13 @@
 
               Also, if you love our work, you can share it with your friends.
             </p>
-            <!-- <div class="card h-100">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNUEp51DMreNUyTtgqvy7cQXTsSuYl4Fy7lg&usqp=CAU" alt="John" style="width:100%">
-              <div class="container">
-                <div class="col col-sm-3">
-                <h2 style="color: #0e0042;">Easily Downloadable</h2>
-               
-                <p>No register accounts needed. All you need to do is to enter the video's url that you wish to convert & download. Select the format then click "download" to start the converting process.</p>
-               
-                <p><button class="button"></button></p>
-                <div class="about-section">
-                  <h1 style="color: floralwhite;">Features</h1>
-                  <p>Take a look at some of our user-friendly features !</p>
-                  
-                </div>y
-              </div>
-              </div>
-            </div> -->
+          
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script type="text/javascript">
-    $(".click-btn-down").click(function () {
-      var link = $(".link").val();
-      var fromate = $(".formte").children("option:selected").val();
-      var src = "" + link + "=" + fromate + "";
-      downloadVideo(link, fromate);
-    });
-    function downloadVideo(link, fromate) {
-      $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url=' + link + '&f=' + fromate + '"></iframe>');
-    }
-  </script>
-
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-      navbarFixedTopAnimation();
-    });
-  </script>
 
   <footer class="footer-container white-text-container">
     <div class="container">
@@ -552,8 +373,8 @@
 
             <div class="col-xs-12 col-sm-5">
               <div class="text-right">
-                <a>
-                Contact Us
+                <a href="./contact.html">
+                <u>Contact Us</u>
               </a>
             </div>
             <br>
@@ -591,6 +412,25 @@
 
   <script type="text/javascript" src="./main.0cf8b554.js"></script>
 
+  
+  <script type="text/javascript">
+    $(".click-btn-down").click(function () {
+      var link = $(".link").val();
+      var fromate = $(".formte").children("option:selected").val();
+      var src = "" + link + "=" + fromate + "";
+      downloadVideo(link, fromate);
+    });
+    function downloadVideo(link, fromate) {
+      $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url=' + link + '&f=' + fromate + '"></iframe>');
+    }
+  </script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+      navbarFixedTopAnimation();
+    });
+  </script>
 
   <script>
     // Get the modal
@@ -626,21 +466,7 @@
     });
   </script>
 
-  <!-- <script>
-    function myFunctioni(x) {
-      x.classList.toggle("change");
-    }
-  </script>
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script> -->
+
 <script>
   function myFunction() {
   var x = document.getElementById("myLinks");
@@ -672,7 +498,7 @@
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    setTimeout(showSlides, 2000);
   }
   </script>
 
