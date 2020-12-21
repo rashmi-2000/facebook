@@ -768,7 +768,7 @@ img {vertical-align: middle;}
      }
     
   
-     .btn-grad3 {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%) !important}
+     .btn-grad3 {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #3bffb4  100%) !important}
      .btn-grad3 {
         
         padding: 15px 45px;
