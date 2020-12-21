@@ -416,7 +416,7 @@ h1 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
-  top: 60%;
+  top: 63%;
   left: 50%;
   bottom: 0%;
   transform: translate(-50%, -50%);
@@ -438,7 +438,7 @@ h1 {
 
 /* The Close Button */
 .close {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -768,6 +768,8 @@ img {vertical-align: middle;}
      }
     
   
-  
+.contact {
+  display: inline !important;
+}
 
   
