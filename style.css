@@ -725,14 +725,14 @@ img {vertical-align: middle;}
   
   .btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%) !important}
   .btn-grad {
-     margin: 10px; 
+     /* margin: 10px;  */
      padding: 15px 45px;
      text-align: center;
      text-transform: uppercase;
      transition: 0.5s;
      background-size: 200% auto;
      color: white;            
-     box-shadow: 0 0 20px #2d76c9;
+     box-shadow: 0 0 10px #2d76c9;
      border-radius: 10px;
      display: block;
    }
@@ -756,7 +756,7 @@ img {vertical-align: middle;}
        transition: 0.5s;
        background-size: 200% auto;
        color: rgb(0, 0, 0);            
-       box-shadow: 0 0 20px rgb(107, 253, 204);
+       box-shadow: 0 0 10px rgb(107, 253, 204);
        border-radius: 10px;
        display: block;
      }
