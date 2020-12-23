@@ -119,7 +119,6 @@
                           <option selected disabled>Select Format</option>
                           <option value="mp3">Mp3 Audio</option>
                           <option value="m4a">M4a Audio</option>
-                          <option value="wav">wav Audio</option>
                           <option value="360">360 Mp4</option>
                           <option value="480">480 Mp4</option>
                           <option value="720">720 Mp4</option>
@@ -421,7 +420,7 @@
   <script type="text/javascript" src="./main.0cf8b554.js"></script>
 
   
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $(".click-btn-down").click(function () {
       var link = $(".link").val();
       var fromate = $(".formte").children("option:selected").val();
@@ -431,7 +430,26 @@
     function downloadVideo(link, fromate) {
       $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url=' + link + '&f=' + fromate + '"></iframe>');
     }
-  </script>
+  </script> -->
+
+
+
+  <script type="text/javascript">
+    $("#hide").click(function(){
+  
+    $('#hide option').each(function() {
+    if($(this).is(':selected')) { 
+      var link = $(".link").val();
+      var fromate = $(".formte").children("option:selected").val();
+      var src =""+link+"="+fromate+"";
+       downloadVideo(link,fromate); }
+    function downloadVideo(link,fromate) {
+        $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
+     document.getElementById("aa").style.display = "block"; }
+  }); });
+  
+  </script> 
+
 
 
   <script>
