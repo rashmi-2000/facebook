@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  
+
   <meta charset="UTF-8">
 
   <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -13,7 +13,7 @@
   <meta name="google" content="notranslate" />
   <meta content="Mashup templates have been developped by Rashmi XD" name="author">
 
-  
+
   <meta name="msapplication-tap-highlight" content="no">
 
 
@@ -34,11 +34,11 @@
 </head>
 
 <body>
- 
+
   <header>
     <nav class="navbar-fixed-top">
     <div class="topnav ">
-     
+
       <a class=" activenav">
         <div>
         <img src="./assets/images/mashup-icon.svg" class="navbar-logo-img" alt="">
@@ -47,14 +47,14 @@
       </a>
 
       <div id="myLinks">
-      
+
         <a href="#" onclick=" myFunction()">Home</a>
         <a href="#myBtn" onclick=" myFunction()">How to Download</a>
         <a href="#features" onclick="myFunction()">Features</a>
-          
+
         <a href="#about" onclick="myFunction() " >About Us</a>
       </div>
-    
+
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars fa-2x" style="color: white;"></i>
       </a>
@@ -64,20 +64,20 @@
   </header>
 
 
-  
- 
+
+
   <div class="hero-full-container background-image-container white-text-container">
     <div class="container">
       <div class="row">
         <br>
         <div class="col-xs-12">
           <h1 style="color:floralwhite; font-size: 2.95em; text-align: center;">Facebook Downloader</h1>
-          
+
           <br>
         </div>
       </div>
     </div>
-  </div> 
+  </div>
   <div class="section-container">
     <div class="container">
       <div class="row">
@@ -98,7 +98,7 @@
                           class="form-control link" required>
                         <span class="input-group-btn" id="bthide">
                           <button class="btn  btn-block click-btn-down btn-grad1" type="submit"> Proceed</button>
-                        
+
                         </span>
                       </div>
 
@@ -133,7 +133,7 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group mt-4 download-video">
-                     
+
                       </div>
                     </div>
                   </div>
@@ -148,14 +148,14 @@
               <br>
               <br>
               <p style="color: black;"><b>Confused? Click on the above button and follow the steps.</b></p>
-            </div> 
+            </div>
           </div>
-            
+
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
 <div class="modal-content">
- 
+
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -172,7 +172,7 @@
     <div class="item active">
       <div style="text-align: center;">
         <h3 style="color: floralwhite;">Step-1</h3>
-        
+
       </div>
       <img src="./assets/images/s1.PNG" class="centerimg" style="width: 80%;">
       <br>
@@ -187,7 +187,7 @@
       <br>
 
       <p style="color: rgb(0, 0, 0);"><b>Click on the PROCEED button.</b></p>
-     
+
     </div>
 
     <div class="item">
@@ -208,7 +208,7 @@
       <br>
 
       <p style="color: rgb(0, 0, 0);"><b>Click on Download button.</b></p>
-      
+
     </div>
     <div class="item">
       <div style="text-align: center;">
@@ -218,16 +218,16 @@
       <br>
 
       <p style="color: rgb(0, 0, 0);"> <b>Wait for the download bar to load to 100% and then click on Download Now!</b></p>
-      
+
     </div>
     <br>
     <br>
     <br>
   </div>
-  
+
 </div>
 
-  
+
 </div>
   </div>
   <!-- <div class="modal-footer">
@@ -247,7 +247,7 @@
   </div>
 
 
-  
+
 
 
   </div>
@@ -274,9 +274,9 @@
     <p  style="color: floralwhite;"><em>Our Facebook Downloader allows you to convert Facebook videos with just a few clicks. You can download
       videos in different quality such as: 360p,720p, 1080p and 4K. Now you can easily convert thousands of videos
       from Facebook and save them to your collection of favorites. It has never been easier to download videos.</em>
-   
+
   </div>
- 
+
   <div class="section-container">
     <div class="container">
       <div class="row">
@@ -359,7 +359,7 @@
 
               Also, if you love our work, you can share it with your friends.
             </p>
-          
+
           </div>
         </div>
       </div>
@@ -372,10 +372,10 @@
       <div class="row">
 
 
-        
 
 
-          
+
+
             <div class="col-xs-12" style="text-align: center;">
               <p>Have any queries? <a href="./contact.html"><em>Contact Us</em></a>
                </p>
@@ -389,17 +389,17 @@
                 <a href="https://www.linkedin.com/" class="social-round-icon white-round-icon fa-icon" title="">
                   <i class="fa fa-linkedin" aria-hidden="true"></i>
                 </a>
-                
-              
+
+
             </div>
-          
-
-           
-            
-          
 
 
-        
+
+
+
+
+
+
       </div>
     </div>
 <br>
@@ -419,7 +419,7 @@
 
   <script type="text/javascript" src="./main.0cf8b554.js"></script>
 
-  
+
   <!-- <script type="text/javascript">
     $(".click-btn-down").click(function () {
       var link = $(".link").val();
@@ -435,21 +435,28 @@
 
 
   <script type="text/javascript">
+  $('#youtube-id').on('change', function () {
+  document.getElementById("hide").style.display = "block";
+  document.getElementById("a").style.display = "block";
+
+});
     $("#hide").click(function(){
-  
+
     $('#hide option').each(function() {
-    if($(this).is(':selected')) { 
+    if($(this).is(':selected')) {
       var link = $(".link").val();
       var fromate = $(".formte").children("option:selected").val();
       var src =""+link+"="+fromate+"";
-       downloadVideo(link,fromate); }
+       downloadVideo(link,fromate);
+      }
     function downloadVideo(link,fromate) {
         $('.download-video').html('<iframe style="width:100%;height:60px;border:0;overflow:hidden;" scrolling="no" src="https://loader.to/api/button/?url='+link+'&f='+fromate+'"></iframe>');
      document.getElementById("aa").style.display = "block"; }
   }); });
-  
-  </script> 
 
+  </script>
+ <script>
+</script>
 
 
   <script>
@@ -468,7 +475,7 @@
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
-    // When the user clicks on the button, open the modal 
+    // When the user clicks on the button, open the modal
     btn.onclick = function () {
       modal.style.display = "block";
     }
@@ -485,12 +492,7 @@
       }
     }
   </script>
-  <script>$('#youtube-id').on('change', function () {
-      document.getElementById("hide").style.display = "block";
-      document.getElementById("a").style.display = "block";
-
-    });
-  </script>
+ 
 
 
 <script>
@@ -509,20 +511,20 @@
 <!-- <script>
   var slideIndex = 0;
   showSlides();
-  
+
   function showSlides() {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
+      slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
+    if (slideIndex > slides.length) {slideIndex = 1}
     for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2000);
   }
